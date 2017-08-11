@@ -1,0 +1,46 @@
+T alk
+what will be return if I have a empty dictionary?  exception
+What will be return with a empty string? False
+It can have special characters the string and the dictionary?
+Is case sensitive? No
+
+E xamples
+{ pear, salmon, foot, prints, footprints, leave, you, sun, girl, enjoy }
+youenjoy answer: true
+youleavefootprints answer: true
+salmonenjoyapples : false
+
+{}
+youenjoy answer: False
+{ pear, salmon, foot, prints, footprints, leave, you, sun, girl, enjoy }
+"" answer: False
+
+{hello, Salmon, foot,that, World, boy, travel}
+ThatboyTravel
+
+B rute force
+check if the string or the dictionary is empty and return false
+transform all the string to lowercase
+Go through all the dictionary and transform each word to lower case and check if is in the string
+if is in the string delete this word
+at the end check if the string is empty return true if not return false
+
+O ptimize
+read the string validated is not empty, and that the dictionary is not empty if it is empty return false
+otherwise start a loop cheking the 
+
+W alk through
+Read file
+created validation
+Start reading the dictionary
+check if a word is in the string if there is convert it to empty
+after the for check the content of the string if is empty return true else return false
+I mplement
+
+T est
+print wordBreak('youenjoy',{'pear', 'salmon', 'foot', 'prints', 'footprints', 'leave', 'you', 'sun', 'girl', 'enjoy' })
+print wordBreak('youleavefootprints',{'pear', 'salmon', 'foot', 'prints', 'footprints', 'leave', 'you', 'sun', 'girl', 'enjoy'})
+print wordBreak('salmonenjoyapples',{'pear', 'salmon', 'foot', 'prints', 'footprints', 'leave', 'you', 'sun', 'girl', 'enjoy'})
+print wordBreak('youenjoy', {})
+print wordBreak('',{ 'pear', 'salmon', 'foot', 'prints', 'footprints', 'leave', 'you', 'sun', 'girl', 'enjoy' })
+print wordBreak('ThatboyTravel', {'hello', 'Salmon', 'foot', 'that', 'World', 'boy', 'travel'})
